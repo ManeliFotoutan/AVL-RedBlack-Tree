@@ -169,21 +169,34 @@ def _plot_tree_helper(ax, node, x, y, dx, key, level=0):
         ax.plot([x, x + dx], [y - 0.1, y - 0.2], color='black')
         _plot_tree_helper(ax, node.right, x + dx, y - 0.2, dx / 2, node.right.key, level + 1)
 
-# Initialize the AVL-Red-Black Tree
-tree = AVLRedBlackTree()
+# Main function to handle user input and output
+def main():
+    # Initialize the AVL-Red-Black Tree
+    tree = AVLRedBlackTree()
 
-# Insert elements
-elements_to_insert = [10, 20, 30, 15, 25, 5, 3, 8]
-for elem in elements_to_insert:
-    tree.insert(elem)
+    # Get user input for elements to insert
+    elements_to_insert = input("Enter elements to insert (comma-separated): ").split(',')
+    elements_to_insert = [int(e) for e in elements_to_insert]
+    
+    # Insert elements
+    for elem in elements_to_insert:
+        tree.insert(elem)
+    
+    # Plot and save the tree after insertions
+    plot_tree(tree, "tree_after_insertion.png")
+    print("Tree after insertions saved as 'tree_after_insertion.png'")
 
-# Plot and save the tree after all insertions
-plot_tree(tree, "tree_after_insertion.png")
+    # Get user input for elements to delete
+    elements_to_delete = input("Enter elements to delete (comma-separated): ").split(',')
+    elements_to_delete = [int(e) for e in elements_to_delete]
+    
+    # Delete elements
+    for elem in elements_to_delete:
+        tree.delete(elem)
+    
+    # Plot and save the tree after deletions
+    plot_tree(tree, "tree_after_deletion.png")
+    print("Tree after deletions saved as 'tree_after_deletion.png'")
 
-# Delete some elements and plot again
-elements_to_delete = [20, 30, 8]
-for elem in elements_to_delete:
-    tree.delete(elem)
-
-# Plot and save the tree after deletions
-plot_tree(tree, "tree_after_deletion.png")
+if __name__ == "__main__":
+    main()
