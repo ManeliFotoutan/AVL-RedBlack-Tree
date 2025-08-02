@@ -1,4 +1,4 @@
-echo "
+
 # AVL and Red-Black Tree Hybrid Implementation with Visualization
 
 ## Overview
@@ -25,9 +25,9 @@ It supports insertion, deletion, searching, and visualizes the tree structure us
 
 Install dependencies:
 
-\`\`\`bash
+```bash
 pip install matplotlib
-\`\`\`
+```
 
 ---
 
@@ -35,9 +35,9 @@ pip install matplotlib
 
 Run the program:
 
-\`\`\`bash
+```bash
 python avl_red_black_tree.py
-\`\`\`
+```
 
 Follow the prompts to:  
 - Enter comma-separated integers to insert into the tree  
@@ -81,4 +81,3 @@ Resulting tree visualizations will be saved to PNG files.
 ---
 
 Feel free to contribute or request features!
-"
