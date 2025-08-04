@@ -64,6 +64,3 @@ Delete elements: `20,15`
 
 Resulting tree visualizations will be saved to PNG files.
 
----
-
-Feel free to contribute or request features!
