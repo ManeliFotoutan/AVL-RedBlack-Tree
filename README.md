@@ -6,8 +6,6 @@
 This project implements a hybrid self-balancing binary search tree combining AVL and Red-Black Tree properties.  
 It supports insertion, deletion, searching, and visualizes the tree structure using matplotlib.
 
----
-
 ## Features
 
 - Insert integer keys maintaining AVL height balance and Red-Black color properties  
@@ -15,8 +13,6 @@ It supports insertion, deletion, searching, and visualizes the tree structure us
 - Search keys efficiently  
 - Visualize the tree with colored nodes (red or black) using matplotlib  
 - Save visualizations to PNG files after insertions and deletions  
-
----
 
 ## Requirements
 
@@ -28,8 +24,6 @@ Install dependencies:
 ```bash
 pip install matplotlib
 ```
-
----
 
 ## Usage
 
@@ -45,16 +39,12 @@ Follow the prompts to:
 - Enter comma-separated integers to delete from the tree  
 - View the updated tree saved as `tree_after_deletion.png`  
 
----
-
 ## Code Structure
 
 - **AVLRedBlackNode**: Node class with key, color ('R' or 'B'), left/right children, and height  
 - **AVLRedBlackTree**: Main tree class implementing insertion, deletion, balancing, rotations, and color flips  
 - **plot_tree**: Visualizes the tree with colored nodes and edges  
 - **main**: User interaction loop for insertions and deletions with visualization  
-
----
 
 ## Notes
 
@@ -63,13 +53,9 @@ Follow the prompts to:
 - Balancing integrates AVL rotations and Red-Black color flips  
 - Visualization shows node keys in colored circles (red or black)  
 
----
-
 ## License
 
 This project is open-source and free to use.
-
----
 
 ## Example
 
